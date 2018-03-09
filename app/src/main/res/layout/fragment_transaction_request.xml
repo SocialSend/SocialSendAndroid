@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/bgWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="send.org.sendwallet.ui.base.BaseDrawerActivity">
+
+    <include layout="@layout/fragment_transaction_inputs">
+
+    </include>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnRequest"
+            android:layout_width="314dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bg_button_border"
+            android:elevation="2dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="trySend"
+            android:text="@string/btn_request"
+            android:textColor="@color/textColorPurple"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -177,4 +177,12 @@
     <string name="donation_title">Voy a hacer una donación</string>
     <string name="btn_donate">Donar</string>
     <string name="donation_thanks">Enviando donación.. ¡Gracias por su ayuda!</string>
+    <string name="news">Novedades</string>
+    <string name="social_title">Síguenos</string>
+    <string name="social_info">¡Encuéntranos en las redes sociales!</string>   
+    <string name="share_app">Compartir ésta app</string>
+    <string name="share_options">Elija el método de compartir</string>
+    <string name="share_subject">Social Send</string>
+    <string name="share_body">Social Send es una criptomoneda líder que se enfoca en las redes sociales, para enviar y recibir fondos en todo el mundo. Descarga el monedero https://play.google.com/store/apps/details?id=social.send.wallet</string>
+
 </resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_list_row">
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/social_info"
+        android:textSize="18sp"
+        android:textColor="@color/mainText" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/social_discord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Discord"
+            android:drawableTop="@drawable/discord"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:gravity="center"     
+            android:textColor="#757575" />
+
+        <Button
+            android:id="@+id/social_facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Facebook"
+            android:drawableTop="@drawable/facebook"
+            android:textSize="12sp" 
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="#757575" />    
+
+        <Button
+            android:id="@+id/social_twitter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Twitter"
+            android:drawableTop="@drawable/twitter"
+            android:textSize="12sp" 
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="#757575" />        
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/social_telegram"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Telegram"
+            android:drawableTop="@drawable/telegram"
+            android:textSize="12sp"   
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="#757575" />
+
+
+        <Button
+            android:id="@+id/social_whatsapp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Whatsapp"
+            android:drawableTop="@drawable/whatsapp"
+            android:textSize="12sp" 
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="#757575" />
+
+        <Button
+            android:id="@+id/social_github"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Github"
+            android:drawableTop="@drawable/github"
+            android:textSize="12sp" 
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="#757575" />       
+
+    </LinearLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/social_bitcointalk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Bitcointalk"
+            android:drawableTop="@drawable/bit"
+            android:textSize="12sp" 
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="#757575" />
+
+    </LinearLayout>
+</LinearLayout>

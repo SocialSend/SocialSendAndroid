@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <group android:checkableBehavior="single">
         <item
@@ -18,8 +19,24 @@
             android:id="@+id/nav_donations"
             android:icon="@drawable/ic_donations"
             android:title="@string/donations" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/news" />           
+
+        <item 
+            android:id="@+id/nav_followus"
+            android:icon="@drawable/ic_perm_group_social_info"
+            android:title="@string/social_title"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:actionProviderClass="android.widget.ShareActionProvider"
+            android:icon="@drawable/ic_share"
+            android:title="@string/share_app"
+            app:showAsAction="always" />
+
     </group>
-
-
 
 </menu>

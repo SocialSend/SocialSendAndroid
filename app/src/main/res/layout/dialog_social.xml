@@ -95,7 +95,7 @@
 
 
         <Button
-            android:id="@+id/social_whatsapp"
+            android:id="@+id/social_bitcointalk"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -103,9 +103,9 @@
             android:elevation="2dp"
             android:padding="10dp"
             android:layout_marginTop="10dp"
-            android:text="Whatsapp"
-            android:drawableTop="@drawable/whatsapp"
-            android:textSize="12sp" 
+            android:text="Bitcointalk"
+            android:drawableTop="@drawable/bit"
+            android:textSize="12sp"
             android:textAllCaps="false"
             android:gravity="center"
             android:textColor="#757575" />
@@ -128,25 +128,5 @@
 
     </LinearLayout>
     
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/social_bitcointalk"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:elevation="2dp"
-            android:padding="10dp"
-            android:layout_marginTop="10dp"
-            android:text="Bitcointalk"
-            android:drawableTop="@drawable/bit"
-            android:textSize="12sp" 
-            android:textAllCaps="false"
-            android:gravity="center"
-            android:textColor="#757575" />
 
-    </LinearLayout>
 </LinearLayout>

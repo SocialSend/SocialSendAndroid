@@ -31,7 +31,7 @@ public class SocialLinksDialog extends BottomSheetDialogFragment {
         Button  discordBtn = (Button) view.findViewById(R.id.social_discord);
         Button  bitcointalkBtn = (Button) view.findViewById(R.id.social_bitcointalk);
         Button  telegramBtn = (Button) view.findViewById(R.id.social_telegram);
-        Button  whatsappBtn = (Button) view.findViewById(R.id.social_whatsapp);
+        //Button  whatsappBtn = (Button) view.findViewById(R.id.social_whatsapp);
         Button  githubBtn = (Button) view.findViewById(R.id.social_github);
         Button  facebookBtn = (Button) view.findViewById(R.id.social_facebook);
         Button  twitterBtn = (Button) view.findViewById(R.id.social_twitter);
@@ -78,7 +78,7 @@ public class SocialLinksDialog extends BottomSheetDialogFragment {
                 }
         );
     
-        whatsappBtn.setOnClickListener(
+        /*whatsappBtn.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -99,7 +99,7 @@ public class SocialLinksDialog extends BottomSheetDialogFragment {
                     }
                 }
     
-        );
+        );*/
 
         twitterBtn.setOnClickListener(
                 new View.OnClickListener() {

@@ -13,7 +13,7 @@ public class SendtrumGlobalData {
 
     public static final String KAALI_TESTNET_SERVER = "peer.socialsend.io";
 
-    public static final String[] TRUSTED_NODES = new String[]{"peer.socialsend.io", "140.82.15.8"};
+    public static final String[] TRUSTED_NODES = new String[]{"peer.socialsend.io", "80.209.239.226", "109.235.71.145",  "140.82.15.8"};
 
     public static final List<SendtrumPeerData> listTrustedHosts(){
         List<SendtrumPeerData> list = new ArrayList<>();

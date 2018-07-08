@@ -30,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
         Uri video;
         if(SendApplication.getInstance().getAppConf().isSplashSoundEnabled())
             video = Uri.parse("android.resource://" + getPackageName() + "/"
-                + R.raw.splash_video);
+                + R.raw.splash_video_muted);
         else {
             //video = Uri.parse("android.resource://" + getPackageName() + "/"
             //        + R.raw.splash_video_muted);

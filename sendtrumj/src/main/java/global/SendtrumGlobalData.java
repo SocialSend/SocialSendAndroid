@@ -11,13 +11,13 @@ import sendtrum.SendtrumPeerData;
 
 public class SendtrumGlobalData {
 
-    public static final String KAALI_TESTNET_SERVER = "45.32.148.247";
+    public static final String KAALI_TESTNET_SERVER = "peer.socialsend.io";
 
-    public static final String[] TRUSTED_NODES = new String[]{"45.32.148.247"};
+    public static final String[] TRUSTED_NODES = new String[]{"peer.socialsend.io", "80.209.239.226", "109.235.71.145",  "140.82.15.8"};
 
     public static final List<SendtrumPeerData> listTrustedHosts(){
         List<SendtrumPeerData> list = new ArrayList<>();
-        list.add(new SendtrumPeerData(KAALI_TESTNET_SERVER,50050,55552));
+        /*list.add(new SendtrumPeerData(KAALI_TESTNET_SERVER,50050,55552));*/
         for (String trustedNode : TRUSTED_NODES) {
             list.add(new SendtrumPeerData(trustedNode,50050,55552));
         }

@@ -110,7 +110,7 @@ public class StartNodeActivity extends BaseActivity {
 
         // add connected node if it's not on the list
         SendtrumPeerData sendtrumPeer = sendApplication.getAppConf().getTrustedNode();
-        if (sendtrumPeer!=null && !sendtrumPeer.getHost().equals(KAALI_TESTNET_SERVER)){
+        if (sendtrumPeer!=null && !sendtrumPeer.getHost().equals(KAALI_TESTNET_SERVER) && !trustedNodes.contains(sendtrumPeer)){
             trustedNodes.add(sendtrumPeer);
         }
 

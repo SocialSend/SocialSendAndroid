@@ -378,5 +378,21 @@
     <string name="option_coin_selection">Coin selection</string>
     <string name="change_address_remember">Remember selection</string>
     <string name="my_address">My Address</string>
-
+    <string name="news">News</string>
+    <string name="social_title">Follow us</string>
+    <string name="social_info">Find us on the social networks!</string>
+    <string name="share_app">Share this app</string>
+    <string name="share_options">Choose sharing method</string>
+    <string name="share_subject">Social Send</string>
+    <string name="share_body">Social Send is a leading cryptocurrency focusing on social networks, for sending and receiving funds worldwide. Download wallet now https://play.google.com/store/apps/details?id=social.send.wallet</string>
+    <string name="url_news">http://news.socialsend.info/</string>
+    <string name="url_discord">https://discord.gg/xJthHER</string>
+    <string name="url_bitcointalk">https://bitcointalk.org/index.php?topic=2496037</string>
+    <string name="url_whatsapp">https://chat.whatsapp.com/9xKByKFl0xgKWZXjJrT17v</string>
+    <string name="url_github">https://github.com/SocialSend/SocialSend</string>
+    <string name="url_twitter">https://twitter.com/SocialSendCoin</string>
+    <string name="url_facebook">https://facebook.com/SocialSendCoin</string>
+    <string name="id_twitter">925581663903641600</string>
+    <string name="id_facebook">1457590014310673</string>
+    <string name="id_telegram">socialsendofficial</string>
 </resources>

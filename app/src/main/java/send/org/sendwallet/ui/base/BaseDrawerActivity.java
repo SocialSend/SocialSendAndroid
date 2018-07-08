@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.net.Uri;
 
 import chain.BlockchainState;
 import send.org.sendwallet.BuildConfig;
@@ -26,6 +27,7 @@ import send.org.sendwallet.ui.contacts_activity.ContactsActivity;
 import send.org.sendwallet.ui.donate.DonateActivity;
 import send.org.sendwallet.ui.settings_activity.SettingsActivity;
 import send.org.sendwallet.ui.wallet_activity.WalletActivity;
+import send.org.sendwallet.ui.base.dialogs.SocialLinksDialog;
 
 import static send.org.sendwallet.module.SendContext.OUT_OF_SYNC_TIME;
 import static send.org.sendwallet.service.IntentsConstants.ACTION_NOTIFICATION;
@@ -192,7 +194,7 @@ public class BaseDrawerActivity extends SendActivity implements NavigationView.O
         int id = item.getItemId();
 
         //to prevent current item select over and over
-        if (item.isChecked()){
+        if (item.isChecked() && id != R.id.nav_followus){
             drawer.closeDrawer(GravityCompat.START);
             return false;
         }
@@ -208,6 +210,18 @@ public class BaseDrawerActivity extends SendActivity implements NavigationView.O
             startActivity(new Intent(this, SettingsActivity.class));
         } else if (id == R.id.nav_donations){
             startActivity(new Intent(this, DonateActivity.class));
+        } else if (id == R.id.nav_news) {
+            Uri uri = Uri.parse( getString(R.string.url_news) );
+            startActivity( new Intent( Intent.ACTION_VIEW, uri ) );
+        } else if (id == R.id.nav_followus) {
+            SocialLinksDialog socialDialog = new SocialLinksDialog();
+            socialDialog.show(getSupportFragmentManager(), "SocialLinks");
+        } else if (id == R.id.nav_share) {
+            Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,getString(R.string.share_subject));
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, getString(R.string.share_body));
+            startActivity(Intent.createChooser(sharingIntent, getString(R.string.share_options)));
         }
 
         drawer.closeDrawer(GravityCompat.START);

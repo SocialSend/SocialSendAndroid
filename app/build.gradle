@@ -9,9 +9,9 @@ android {
     defaultConfig {
         applicationId 'social.send.wallet'
         minSdkVersion 21
-        targetSdkVersion 23
-        versionCode 17
-        versionName "1.2.0.0"
+        targetSdkVersion 26
+        versionCode 18
+        versionName '1.2.0.1'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
 
@@ -69,10 +69,8 @@ dependencies {
     compile 'ch.acra:acra:4.9.2'
     //compile 'com.bugsee:bugsee-android:+'
     implementation project(':sendtrumj')
-
     // Required for local unit tests (JUnit 4 framework)
     testCompile 'junit:junit:4.12'
-
     // Required for instrumented tests
     androidTestCompile 'com.android.support:support-annotations:24.0.0'
     androidTestCompile 'com.android.support.test:runner:0.5'
